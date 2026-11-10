@@ -1,0 +1,37 @@
+{
+  "name": "javascript-text-to-speech-assemblyai",
+  "version": "1.0.0",
+  "description": "JavaScript text to speech: the browser's speechSynthesis API and the AssemblyAI TTS API in Node, the browser and React",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "synthesize": "node --env-file=.env synthesize.mjs",
+    "server": "node --env-file=.env server.mjs",
+    "react": "vite",
+    "react:build": "vite build",
+    "check": "node --check synthesize.mjs && node --check server.mjs && node --check public/script.js && node --check public/tts.js"
+  },
+  "dependencies": {
+    "assemblyai": "^4.42.0",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vite": "^6.4.5"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "keywords": [
+    "assemblyai",
+    "text-to-speech",
+    "tts",
+    "speechsynthesis",
+    "web-speech-api",
+    "javascript",
+    "react"
+  ],
+  "license": "MIT"
+}
